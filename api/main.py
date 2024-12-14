@@ -7,8 +7,7 @@ app = FastAPI()
 
 # Allow specific origins, methods, and headers
 origins = [
-    "http://localhost:3000", # Replace with your Next.js frontend URL
-    "https://your-production-domain.com", # Allow other domains as necessary
+    "https://fast-api-l0qs.onrender.com", # Allow other domains as necessary
 ]
 
 app.add_middleware(
