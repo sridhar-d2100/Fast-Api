@@ -7,7 +7,8 @@ app = FastAPI()
 
 # Allow specific origins, methods, and headers
 origins = [
-    "https://fast-api-l0qs.onrender.com", # Allow other domains as necessary
+    "https://fast-api-l0qs.onrender.com", # Allow other domains as necessary,
+    "*"
 ]
 
 app.add_middleware(
@@ -15,7 +16,7 @@ app.add_middleware(
     allow_origins=origins,
     allow_credentials=True,
     allow_methods=["GET", "POST"], # Adjust methods as needed
-    allow_headers=["Content-Type", "Authorization"], # Adjust headers as needed
+    allow_headers=["*"],
 )
 
 # Database connection details
